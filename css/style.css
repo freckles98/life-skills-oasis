@@ -667,20 +667,13 @@ a:focus {
     margin-bottom: 45px;
     padding: 210px 0 90px 0;
     text-align: center;
-
+    height: 500px; 
     background-image:
         linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));   
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/* disable fixed attachment on small devices for better performance */
-@media (max-width: 991.98px) {
-    .page-header {
-        background-attachment: scroll;
-    }
 }
 
 .page-header h2 {
@@ -747,6 +740,8 @@ a:focus {
 @media (max-width: 991.98px) {
     .page-header {
         padding: 60px 0;
+        background-attachment: scroll;
+        height: 350px;
     }
     
     .page-header h2 {
@@ -761,6 +756,7 @@ a:focus {
 @media (max-width: 767.98px) {
     .page-header {
         padding: 45px 0;
+        height: 250px;
     }
     
     .page-header h2 {
