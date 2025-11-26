@@ -1,3 +1,13 @@
+/* Variables */
+:root {
+    --brand: #FDBE33;
+    --dark: #20212B;
+    --accent: #4a4c70;
+    --muted: #777777;
+    --bg-light: #f3f6ff;
+    --white: #ffffff;
+}
+
 /*******************************/
 /********* General CSS *********/
 /*******************************/
@@ -8,7 +18,6 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-size: 17px;
     line-height: 1.6;
-}
 }
 
 h1,
@@ -654,13 +663,15 @@ a:focus {
     text-align: center;
 
     background-image:
-        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
-        var(--page-header-image, url('../img/headers/team-header.jpg'));
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+              /* var(--page-header-image, url('../img/headers/team-header.jpg'));  */
+   
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /* disable fixed attachment on small devices for better performance */
 @media (max-width: 991.98px) {
     .page-header {
@@ -711,6 +722,22 @@ a:focus {
 
 .page-header a:last-child::after {
     display: none;
+}
+
+.page-header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* let content sit on top */
+}
+
+.page-header-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 991.98px) {
@@ -1063,9 +1090,6 @@ font-size: 30px
   /* transition: transform .4s ease; */
 }
 
-/* .story-card:hover img {
-  transform: scale(1.02);
-} */
 
 .story-text {
   flex: 1;
@@ -1466,8 +1490,6 @@ border-top: 1px solid #eee;
 
 
 
-
-
 /*******************************/
 /********** Facts CSS **********/
 /*******************************/
@@ -1702,81 +1724,6 @@ border-top: 1px solid #eee;
 .board .board-social .email-link:hover {
     background: #FDBE33;
     color: #ffffff;
-}
-
-
-/*******************************/
-/******* Testimonial CSS *******/
-/*******************************/
-.testimonial {
-    position: relative;
-    width: 100%;
-    padding: 45px 0;
-}
-
-.testimonial .testimonials-carousel {
-    position: relative;
-    width: calc(100% + 30px);
-    margin: 0 -15px;
-}
-
-.testimonial .testimonial-item {
-    position: relative;
-    width: 100%;
-    padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.testimonial .testimonial-profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-
-.testimonial .testimonial-profile img {
-    width: 80px;
-    margin-bottom: -1px;
-}
-
-.testimonial .testimonial-name {
-    padding-left: 15px;
-    width: calc(100% - 95px);
-}
-
-.testimonial .testimonial-name h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.testimonial .testimonial-name p {
-    margin: 0;
-    font-style: italic;
-}
-
-.testimonial .testimonial-text p {
-    margin: 0;
-}
-
-.testimonial .owl-dots {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.testimonial .owl-dot {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 0;
-    background: #FDBE33;
-}
-
-.testimonial .owl-dot.active {
-    background: #20212B;
 }
 
 

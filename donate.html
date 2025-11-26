@@ -90,7 +90,11 @@
         
         
         <!-- Page Header Start -->
-        <div class="page-header" style="--page-header-image: url('../img/groceries-2.jpg');">
+        <div class="page-header">
+            <picture class="page-header-bg">
+                    <source srcset="img/headers/groceries-2.webp" type="image/webp">
+                     <img src="/img/headers/groceries-2.jpg" alt="" />
+                 </picture>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -284,9 +288,9 @@
         <!-- Footer End -->
 
 
-            <script>
-                document.getElementById("year").textContent = new Date().getFullYear();
-            </script>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
 
         <!-- Back to top button -->
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
