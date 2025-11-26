@@ -302,6 +302,15 @@ a:focus {
     background: #f8f9fa;
 }
 
+.custom-navbar {
+    background-color: #1d24bb !important;
+    position: relative !important;  
+    top: 0 !important; 
+    padding: 20px 60px; 
+    
+}
+
+
 @media (min-width: 992px) {
     .navbar {
         position: absolute;
@@ -329,19 +338,12 @@ a:focus {
         letter-spacing: 1px;
     }
 }
-.custom-navbar {
-    background-color: #1d24bb !important; /* dark blue */
-        position: relative !important;  /* remove absolute positioning */
-    top: 0 !important;              /* remove the 45px offset */
-    padding: 20px 60px;    /* adjust padding as needed */
-    
-}
 
 
 @media (max-width: 991.98px) {   
     .navbar {
         padding: 15px;
-        background: #20212B !important;
+        background: #1d24bb !important;
     }
     
     .navbar a.nav-link {
@@ -351,6 +353,10 @@ a:focus {
     .navbar .dropdown-menu {
         box-shadow: none;
     }
+    .navbar .navbar-brand {
+    font-size: 25px;
+
+}
 }
 
 
@@ -525,7 +531,7 @@ a:focus {
 
 @media (max-width: 767.98px) {
     .carousel .carousel-text h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
     
     .carousel .carousel-text .btn {
@@ -537,7 +543,7 @@ a:focus {
 
 @media (max-width: 575.98px) {
     .carousel .carousel-text h1 {
-        font-size: 25px;
+        font-size: 35px;
     }
     
     .carousel .carousel-text .btn {
@@ -663,9 +669,7 @@ a:focus {
     text-align: center;
 
     background-image:
-        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
-              /* var(--page-header-image, url('../img/headers/team-header.jpg'));  */
-   
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));   
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -858,7 +862,7 @@ a:focus {
 }
 
 .tab-content {
-font-size: 30px
+    font-size: 30px
 }
 
 .about .about-tab .tab-content .container {
@@ -885,6 +889,9 @@ font-size: 30px
 @media (max-width: 991.98px) {
     .about .section-header {
         margin-top: 30px;
+    }
+    .tab-content {
+    font-size: 20px
     }
 }
 
