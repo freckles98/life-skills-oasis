@@ -96,8 +96,8 @@
                     <div class="carousel-item">
                         <div class="carousel-img">
                             <picture>
-                                <source class="preload-main" srcset="img/carousel/carousel-1.webp" type="image/webp">
-                                <img class="preload-main" src="img/carousel/carousel-1.jpeg" alt="Empowering lives" loading="lazy">
+                                <source rel="preload" srcset="img/carousel/carousel-1.webp" type="image/webp">
+                                <img rel="preload" src="img/carousel/carousel-1.jpeg" alt="Empowering lives" loading="lazy">
                             </picture>
                         </div>
                         <div class="carousel-text">
@@ -370,41 +370,5 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-
-                <script>
-        document.body.classList.add('not-loaded');
-
-        window.addEventListener('DOMContentLoaded', function () {
-            const mainImages = document.querySelectorAll('img.preload-main');
-            let loaded = 0;
-
-            if (mainImages.length === 0) {
-                document.body.classList.remove('not-loaded');
-                return;
-            }
-
-            mainImages.forEach(img => {
-                if (img.complete) {
-                    loaded++;
-                    if (loaded === mainImages.length) {
-                        document.body.classList.remove('not-loaded');
-                    }
-                } else {
-                    img.addEventListener('load', () => {
-                        loaded++;
-                        if (loaded === mainImages.length) {
-                            document.body.classList.remove('not-loaded');
-                        }
-                    });
-                    img.addEventListener('error', () => {
-                        loaded++;
-                        if (loaded === mainImages.length) {
-                            document.body.classList.remove('not-loaded');
-                        }
-                    });
-                }
-            });
-        });
-        </script>
     </body>
 </html>
