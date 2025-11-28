@@ -434,11 +434,26 @@ a:focus {
     margin-bottom: 20px;
 }
 
+.carousel .carousel-text h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
 .carousel .carousel-text p {
     color: #ffffff;
     text-align: center;
     font-size: 20px;
     margin-bottom: 25px;
+}
+
+.carousel .carousel-text p.photo-description {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.5;
+    text-align: center; /* explicitly center the paragraph text */
 }
 
 .carousel .carousel-btn .btn.btn-custom {
@@ -2759,5 +2774,93 @@ border-top: 1px solid #eee;
 
     .footer .row > div {
         margin-bottom: 20px;         /* spacing between each column */
+    }
+}
+
+/* Meal Cost Breakdown Styling */
+/* Meal Cost Breakdown */
+.meal-cost-breakdown {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    padding: 0 15px;
+}
+
+.meal-cost-breakdown .section-header {
+    margin-bottom: 40px;
+}
+
+.meal-cost-breakdown .section-header p {
+    color: #FDBE33;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.meal-cost-breakdown .section-header h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.meal-cost-breakdown p.meal-intro,
+.meal-cost-breakdown p.meal-summary {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.meal-cost-breakdown h3.section-subtitle {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.meal-cost-breakdown ul.meal-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.meal-cost-breakdown ul.meal-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.15);
+}
+
+.meal-cost-breakdown ul.meal-list li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+    .meal-cost-breakdown .section-header h2 {
+        font-size: 40px;
+    }
+    .meal-cost-breakdown h3.section-subtitle {
+        font-size: 24px;
+    }
+    .meal-cost-breakdown p.meal-intro,
+    .meal-cost-breakdown p.meal-summary {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .meal-cost-breakdown .section-header h2 {
+        font-size: 35px;
+    }
+    .meal-cost-breakdown h3.section-subtitle {
+        font-size: 20px;
+    }
+    .meal-cost-breakdown p.meal-intro,
+    .meal-cost-breakdown p.meal-summary {
+        font-size: 15px;
     }
 }
