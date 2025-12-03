@@ -943,6 +943,48 @@ a:focus {
     }
 }
 
+    .partners {
+        background: #fff;
+    }
+
+    .partner-logo-simple {
+        width: 100%;
+        max-height: 120px;
+        object-fit: contain;
+        background: #fff;
+        padding: 10px;
+    }
+
+    .partners .section-title {
+        font-weight: 700;
+    }
+
+    .partners .partner-logo-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        transition: transform 0.2s ease;
+    }
+
+    .partners .partner-logo-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .partner-logo {
+        max-height: 80px;
+        object-fit: contain;
+    }
+    
+    .partner-col {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+    @media(max-width: 576px) {
+        .partner-logo {
+            max-height: 60px;
+        }
+    }
 
 .story-block {
   padding: 30px;
@@ -967,6 +1009,7 @@ a:focus {
   color: #777;
   letter-spacing: 2px;
 }
+
 
 .timeline-section {
   background: #f7f9fc;
