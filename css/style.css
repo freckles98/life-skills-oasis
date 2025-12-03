@@ -26,11 +26,11 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #4a4c70;
+    color: #52569d;
 }
 
 a {
-    color: #4a4c70;
+    color: #52569d;
     transition: .3s;
 }
 
@@ -812,6 +812,7 @@ a:focus {
     margin: 0;
     font-size: 45px;
     font-weight: 700;
+
 }
 
 @media (max-width: 991.98px) {
@@ -974,7 +975,7 @@ a:focus {
         max-height: 80px;
         object-fit: contain;
     }
-    
+
     .partner-col {
     flex: 0 0 20%;
     max-width: 20%;
@@ -1004,21 +1005,17 @@ a:focus {
   font-weight: 700;
 }
 
-.section-subtitle {
-  text-transform: uppercase;
-  color: #777;
-  letter-spacing: 2px;
-}
+
 
 
 .timeline-section {
   background: #f7f9fc;
 }
 
-.section-title {
+/* .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-}
+} */
 
 .section-subtitle {
   text-transform: uppercase;
