@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --brand: #FDBE33;
+    --brand: #7C3AED;
     --dark: #20212B;
     --accent: #4a4c70;
     --muted: #777777;
@@ -37,7 +37,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #FDBE33;
+    color: #7C3AED;
     outline: none;
     text-decoration: none;
 }
@@ -49,16 +49,16 @@ a:focus {
     font-weight: 500;
     color: #777777;
     border-radius: 0;
-    border: 2px solid #FDBE33;
-    box-shadow: inset 0 0 0 0 #FDBE33;
+    border: 2px solid #7C3AED;
+    box-shadow: inset 0 0 0 0 #7C3AED;
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
 }
 
 .btn.btn-custom:hover {
-    color: #20212B;
-    box-shadow: inset 0 0 0 30px #FDBE33;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 30px #7C3AED;
 }
 
 .btn:focus,
@@ -111,7 +111,7 @@ a:focus {
     width: 45px;
     height: 45px;
     border: 5px solid #dddddd;
-    border-top: 5px solid #FDBE33;
+    border-top: 5px solid #7C3AED;
     border-radius: 50%;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
@@ -130,7 +130,7 @@ a:focus {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #FDBE33;
+    background: #7C3AED;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -152,7 +152,7 @@ a:focus {
 }
 
 .back-to-top:hover i {
-    color: #FDBE33;
+    color: #7C3AED;
 }
 
 
@@ -198,7 +198,7 @@ a:focus {
 
 .top-bar .text i {
     font-size: 16px;
-    color: #FDBE33;
+    color: #7C3AED;
     margin-right: 5px;
 }
 
@@ -223,7 +223,7 @@ a:focus {
     width: 45px;
     height: 100%;
     font-size: 16px;
-    color: #FDBE33;
+    color: #7C3AED;
     border-right: 1px solid rgba(255, 255, 255, .3);
 }
 
@@ -233,7 +233,7 @@ a:focus {
 
 .top-bar .social a:hover {
     color: #ffffff;
-    background: #FDBE33;
+    background: #7C3AED;
 }
 
 @media (min-width: 992px) {
@@ -250,7 +250,7 @@ a:focus {
     position: relative;
     transition: .5s;
     z-index: 999;
-    background: #343a40;    
+    background: #241B38;
     padding: 15px 25px !important;
 }
 
@@ -291,7 +291,7 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #FDBE33;
+    color: #C4B5FD;
     transition: none;
 }
 
@@ -313,6 +313,20 @@ a:focus {
 .custom-navbar.nav-sticky {
     background-color: #1d24bb !important;
     box-shadow: none !important; /* optional: remove sticky shadow */
+}
+
+/* Higher-specificity guard: the desktop media query below sets a bare
+   .navbar to transparent (for navbars that overlay a hero photo). Team
+   bio pages have no hero image behind the nav, so .custom-navbar must
+   always keep its solid fill or its light nav-link text disappears
+   against the white page background. */
+@media (min-width: 992px) {
+    .navbar.custom-navbar {
+        position: relative !important;
+        top: 0 !important;
+        background-color: #1d24bb !important;
+        border-bottom: none;
+    }
 }
 
 
@@ -461,7 +475,7 @@ a:focus {
 }
 
 .carousel .carousel-btn .btn.btn-custom:hover {
-    color: #20212B;
+    color: #ffffff;
 }
 
 .carousel .carousel-btn .btn:first-child {
@@ -486,7 +500,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FDBE33;
+    color: #7C3AED;
     background: rgba(256, 256, 256, .2);
     font-size: 22px;
     transition: .3s;
@@ -495,7 +509,7 @@ a:focus {
 .carousel .owl-nav .owl-prev:hover,
 .carousel .owl-nav .owl-next:hover {
     color: #ffffff;
-    background: #FDBE33;
+    background: #7C3AED;
 }
 
 .carousel .owl-nav .owl-prev {
@@ -698,11 +712,12 @@ a:focus {
 
 .page-header h2 {
     position: relative;
-    color: #FDBE33;
+    color: #ffffff;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
     padding-bottom: 5px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, .35);
 }
 
 .page-header h2::after {
@@ -712,7 +727,7 @@ a:focus {
     height: 2px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: #FDBE33;
+    background: #7C3AED;
 }
 
 .page-header a {
@@ -723,7 +738,7 @@ a:focus {
 }
 
 .page-header a:hover {
-    color: #FDBE33;
+    color: #7C3AED;
 }
 
 .page-header a::after {
@@ -805,7 +820,7 @@ a:focus {
     font-size: 22px;
     font-weight: 600;
     text-transform: capitalize;
-    color: #FDBE33;
+    color: #7C3AED;
 }
 
 .section-header h2 {
@@ -887,9 +902,9 @@ a:focus {
 
 .about .about-tab .nav.nav-pills .nav-link:hover,
 .about .about-tab .nav.nav-pills .nav-link.active {
-    color: #FDBE33;
+    color: #7C3AED;
     padding-bottom: 7px;
-    border-bottom: 3px solid #FDBE33;
+    border-bottom: 3px solid #7C3AED;
 }
 
 .about .about-tab .tab-content {
@@ -1043,7 +1058,7 @@ a:focus {
   top: 0;
   width: 4px;
   height: 100%;
-  background: #FDBE33;
+  background: #7C3AED;
   transform: translateX(-50%);
   border-radius: 10px;
 }
@@ -1084,7 +1099,7 @@ a:focus {
   left: 50%;
   width: 18px;
   height: 18px;
-  background: #FDBE33;
+  background: #7C3AED;
   border-radius: 50%;
   transform: translateX(-50%);
   border: 3px solid white;
@@ -1241,7 +1256,7 @@ a:focus {
 .service .service-icon i {
     position: relative;
     display: block;
-    color: #FDBE33;
+    color: #7C3AED;
     font-size: 60px;
     line-height: 60px;
     margin-top: 5px;
@@ -1270,7 +1285,7 @@ a:focus {
     height: 40px;
     top: calc(50% - 20px);
     left: -1px;
-    background: #FDBE33;
+    background: #7C3AED;
 }
 
 .service .service-text h3 {
@@ -1322,7 +1337,7 @@ a:focus {
 
 .donate .donate-form {
     padding: 90px 30px;
-    background: #FDBE33;
+    background: linear-gradient(135deg, #6D28D9 0%, #1d24bb 100%);
 }
 
 .donate .donate-form .control-group {
@@ -1365,7 +1380,7 @@ a:focus {
 
 .donate .donate-form .btn.btn-custom:hover,
 .donate .donate-form .btn.btn-custom.active {
-    color: #FDBE33;
+    color: #7C3AED;
     border: 1px solid #ffffff;
     box-shadow: inset 0 0 0 30px #ffffff;
 }
@@ -1377,7 +1392,7 @@ a:focus {
 }
 
 .btn-custom.filled:hover {
-    color: #FDBE33;
+    color: #7C3AED;
 
 }
 
@@ -1435,7 +1450,7 @@ a:focus {
 .causes .progress .progress-bar {
     position: relative;
     width: 0px;
-    background: #FDBE33;
+    background: #7C3AED;
     overflow: visible;
     transition: 2s;
 }
@@ -1447,8 +1462,8 @@ a:focus {
     height: 23px;
     display: inline-block;
     padding: 2px 6px;
-    background: #FDBE33;
-    color: #20212B;
+    background: #7C3AED;
+    color: #ffffff;
 }
 
 .causes .progress-bar span::after {
@@ -1459,7 +1474,7 @@ a:focus {
     top: 23px;
     left: calc(50% - 6px);
     border: 6px solid;
-    border-color: #FDBE33 transparent transparent transparent;
+    border-color: #7C3AED transparent transparent transparent;
 }
 
 .causes .progress-text {
@@ -1497,8 +1512,8 @@ a:focus {
 }
 
 .causes .causes-btn .btn:last-child {
-    color: #20212B;
-    background: #FDBE33;
+    color: #ffffff;
+    background: #7C3AED;
 }
 
 .causes .causes-btn .btn:last-child:hover {
@@ -1609,7 +1624,7 @@ border-top: 1px solid #eee;
     margin-top: 10px;
     font-size: 60px;
     line-height: 60px;
-    color: #FDBE33;
+    color: #7C3AED;
 }
 
 .facts .facts-text {
@@ -1724,13 +1739,13 @@ border-top: 1px solid #eee;
     text-align: center;
     font-size: 14px;
     color: #4a4c70;
-    border: 2px solid #FDBE33;
+    border: 2px solid #7C3AED;
     transition: .3s;
 }
 
 .team .team-social a:hover {
-    color: #20212B;
-    background: #FDBE33;
+    color: #ffffff;
+    background: #7C3AED;
 }
 
 .team .team-item:hover .team-text {
@@ -1811,14 +1826,14 @@ border-top: 1px solid #eee;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
-    border: 2px solid #FDBE33;
+    border: 2px solid #7C3AED;
     padding: 5px 10px;
     border-radius: 5px;
     transition: .3s;
 }
 
 .board .board-social .email-link:hover {
-    background: #FDBE33;
+    background: #7C3AED;
     color: #ffffff;
 }
 
@@ -1862,7 +1877,7 @@ border-top: 1px solid #eee;
 
 .volunteer .volunteer-form {
     padding: 90px 30px;
-    background: #FDBE33;
+    background: linear-gradient(135deg, #6D28D9 0%, #1d24bb 100%);
 }
 
 .volunteer .volunteer-form .control-group {
@@ -1903,7 +1918,7 @@ border-top: 1px solid #eee;
 }
 
 .volunteer .volunteer-form .btn.btn-custom:hover {
-    color: #FDBE33;
+    color: #7C3AED;
     border: 1px solid #ffffff;
     box-shadow: inset 0 0 0 30px #ffffff;
 }
@@ -1978,7 +1993,7 @@ border-top: 1px solid #eee;
     height: 40px;
     top: calc(50% - 20px);
     left: -1px;
-    background: #FDBE33;
+    background: #7C3AED;
 }
 
 .event .event-text h3 {
@@ -2068,7 +2083,7 @@ border-top: 1px solid #eee;
 }
 
 .blog .blog-text h3 a:hover {
-    color: #FDBE33;
+    color: #7C3AED;
 }
 
 .blog .blog-text p {
@@ -2115,12 +2130,128 @@ border-top: 1px solid #eee;
 
 .blog .pagination .page-link:hover,
 .blog .pagination .page-item.active .page-link {
-    color: #FDBE33;
+    color: #7C3AED;
     background: #4a4c70;
 }
 
 .blog .pagination .disabled .page-link {
     color: #999999;
+}
+
+
+/*******************************/
+/********** News CSS **********/
+/*******************************/
+.news-section {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.news-story {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+    padding: 40px;
+    margin-bottom: 50px;
+    border-top: 6px solid #7C3AED;
+}
+
+.news-story.news-story-blue {
+    border-top-color: #1d24bb;
+}
+
+.news-story-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.news-story-header h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2a2d40;
+    margin: 0;
+}
+
+.news-date {
+    display: inline-block;
+    background: #7C3AED;
+    color: #ffffff;
+    padding: 6px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .5px;
+    white-space: nowrap;
+}
+
+.news-story-blue .news-date {
+    background: #1d24bb;
+}
+
+.news-date i {
+    margin-right: 6px;
+}
+
+.news-body p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+.news-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.news-photo-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.news-photo-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, .18);
+}
+
+.news-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: #f3f6ff;
+    border-radius: 10px;
+    padding: 15px 18px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #4a4c70;
+}
+
+.news-note i {
+    color: #7C3AED;
+    margin-top: 3px;
+}
+
+@media (max-width: 767.98px) {
+    .news-story {
+        padding: 25px;
+    }
+
+    .news-photo-grid img {
+        height: 180px;
+    }
 }
 
 
@@ -2258,8 +2389,8 @@ border-top: 1px solid #eee;
 
 .single .single-tags a:hover {
     color: #ffffff;
-    background: #FDBE33;
-    border-color: #FDBE33;
+    background: #7C3AED;
+    border-color: #7C3AED;
 }
 
 .single .single-bio {
@@ -2337,7 +2468,7 @@ border-top: 1px solid #eee;
 }
 
 .single .post-item .post-text a:hover {
-    color: #FDBE33;
+    color: #7C3AED;
 }
 
 .single .post-item .post-meta {
@@ -2379,14 +2510,14 @@ border-top: 1px solid #eee;
     align-items: center;
     justify-content: center;
     color: #4a4c70;
-    background: #FDBE33;
+    background: #7C3AED;
     font-size: 16px;
     transition: .3s;
 }
 
 .single .related-slider .owl-nav .owl-prev:hover,
 .single .related-slider .owl-nav .owl-next:hover {
-    color: #FDBE33;
+    color: #7C3AED;
     background: #4a4c70;
 }
 
@@ -2452,7 +2583,7 @@ border-top: 1px solid #eee;
 }
 
 .single .comment-text .btn:hover {
-    background: #FDBE33;
+    background: #7C3AED;
 }
 
 .single .comment-form {
@@ -2481,7 +2612,7 @@ border-top: 1px solid #eee;
 
 .single .comment-form input:focus,
 .single .comment-form textarea:focus {
-    border-color: #FDBE33;
+    border-color: #7C3AED;
 }
 
 
@@ -2519,7 +2650,7 @@ border-top: 1px solid #eee;
     height: 2px;
     bottom: 0;
     left: 0;
-    background: #FDBE33;
+    background: #7C3AED;
 }
 
 .sidebar .sidebar-widget .search-widget {
@@ -2534,7 +2665,7 @@ border-top: 1px solid #eee;
 
 .sidebar .search-widget input:focus {
     box-shadow: none;
-    border-color: #FDBE33;
+    border-color: #7C3AED;
 }
 
 .sidebar .search-widget .btn {
@@ -2544,7 +2675,7 @@ border-top: 1px solid #eee;
     height: 40px;
     padding: 0;
     font-size: 25px;
-    color: #FDBE33;
+    color: #7C3AED;
     background: none;
     border-radius: 0;
     border: none;
@@ -2565,13 +2696,13 @@ border-top: 1px solid #eee;
 
 .sidebar .tab-post .nav.nav-pills .nav-link {
     color: #4a4c70;
-    background: #FDBE33;
+    background: #7C3AED;
     border-radius: 0;
 }
 
 .sidebar .tab-post .nav.nav-pills .nav-link:hover,
 .sidebar .tab-post .nav.nav-pills .nav-link.active {
-    color: #FDBE33;
+    color: #7C3AED;
     background: #4a4c70;
 }
 
@@ -2612,7 +2743,7 @@ border-top: 1px solid #eee;
     content: '\f105';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    color: #FDBE33;
+    color: #7C3AED;
     left: 1px;
 }
 
@@ -2639,8 +2770,8 @@ border-top: 1px solid #eee;
 
 .single .tag-widget a:hover {
     color: #ffffff;
-    background: #FDBE33;
-    border-color: #FDBE33;
+    background: #7C3AED;
+    border-color: #7C3AED;
 }
 
 .sidebar .image-widget {
@@ -2688,7 +2819,7 @@ border-top: 1px solid #eee;
     margin-bottom: 30px;
     font-size: 22px;
     font-weight: 700;
-    color: #FDBE33;
+    color: #C4B5FD;
 }
 
 .footer .footer-link a {
@@ -2707,7 +2838,7 @@ border-top: 1px solid #eee;
 }
 
 .footer .footer-link a:hover {
-    color: #FDBE33;
+    color: #C4B5FD;
     letter-spacing: 1px;
 }
 
@@ -2778,7 +2909,7 @@ border-top: 1px solid #eee;
 }
 
 .footer .copyright p a:hover {
-    color: #FDBE33;
+    color: #C4B5FD;
 }
 .footer-logo-img {
     width: 100%;
@@ -2843,7 +2974,7 @@ border-top: 1px solid #eee;
 }
 
 .meal-cost-breakdown .section-header p {
-    color: #FDBE33;
+    color: #7C3AED;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
